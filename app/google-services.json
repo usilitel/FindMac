@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "597825447902",
+    "firebase_url": "https://findmac-4d0bd.firebaseio.com",
+    "project_id": "findmac-4d0bd",
+    "storage_bucket": "findmac-4d0bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597825447902:android:ff82f16691c17e46",
+        "android_client_info": {
+          "package_name": "com.usilitel.findmac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597825447902-chsl0nihkch111cvagp44240375238fc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usilitel.findmac",
+            "certificate_hash": "96f1e8cef74c16938e30ea0baff86848b726be90"
+          }
+        },
+        {
+          "client_id": "597825447902-ihlssp8v4svs7qttqcdsie812crj8msp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh-LAHz0GLxtnGCsVxdTQHtBQMa0xbPtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597825447902-ihlssp8v4svs7qttqcdsie812crj8msp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
