@@ -27,7 +27,6 @@ public override fun onMessageReceived(remoteMessage: RemoteMessage?) {
 
     // получаем данные из уведомления
     if (remoteMessage?.data!!.size > 0) {
-        Log.d("PushNotificationReceive", "Message data payload: " + remoteMessage.data)
 
         val dataMacAddress = remoteMessage.data["macAddress"]
         val dataCientRegistrationToken = remoteMessage.data["clientRegistrationToken"]
@@ -35,6 +34,7 @@ public override fun onMessageReceived(remoteMessage: RemoteMessage?) {
 
         // если пришел запрос с клиента
         if(dataCientRegistrationToken != null){
+            Log.d("PushNotificationReceive", "Client request data: " + remoteMessage.data)
             // ждем пока просканируется сеть
             runBlocking (Dispatchers.IO) {
                 scanNet()
@@ -46,6 +46,7 @@ public override fun onMessageReceived(remoteMessage: RemoteMessage?) {
 
         // если пришел ответ с сервера
         if(dataMacAddressIsActive != null){
+            Log.d("PushNotificationReceive", "Server response data: " + remoteMessage.data)
             Log.d("PushNotificationReceive", "Server response: macAddress " + dataMacAddress + " is active = " + dataMacAddressIsActive)
         }
 
